@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-lianpayplugin" version="0.0.1">
+    <name>LianPlugin</name>
+
+    <description>An Android Cordova plugin for LianLianPay.</description>
+    <license>MIT</license>
+
+    <keywords></keywords>
+    <repo>https://github.com/wenli135/LianLianPlugin.git</repo>
+    <issue>https://github.com/wenli135/LianLianPlugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/lianplugin.js" name="LianLianPay">
+        <clobbers target="LianLianPay" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="LianPayPlugin">
+                <param name="android-package" value="com.xxx.plugin.LianPayPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/LianPayPlugin.java" target-dir="src/com/xxx/plugin" />
+        <resource-file src="src/android/base-4.0.0.aar" target="libs/base-4.0.0.aar" />
+        <resource-file src="src/android/securepay-4.0.0.aar" target="libs/securepay-4.0.0.aar" />
+        <framework src="src/android/lianpay.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>

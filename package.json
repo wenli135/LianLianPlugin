@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-lianpayplugin",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that allows users to pay via LianLianPay.",
+  "cordova": {
+    "id": "cordova-plugin-lianpayplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenli135/LianLianPlugin.git"
+  },
+  "keywords": [
+    "LianLianPay",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "wl135",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wenli135/LianLianPlugin/issues"
+  },
+  "homepage": ""
+}
